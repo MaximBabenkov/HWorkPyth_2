@@ -11,9 +11,7 @@ def list_mixer(list: list):
     from random import randint
     for i in range(len(list)):
         i_change = randint(0,len(list)-1)
-        temp = list[i_change]
-        list[i_change] = list[i]
-        list[i] = temp
+        list[i], list[i_change] = list[i_change], list[i]
     return list
 
 
