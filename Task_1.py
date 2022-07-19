@@ -16,7 +16,7 @@ def remove_comma(number: str):
 def find_summ(digits: list):
     summ = 0
     for i in range(len(digits)):
-        summ = digits[i] + summ
+        summ += digits[i]
     return summ
 
 numb = input('Enter your number: ')
