@@ -11,7 +11,7 @@ def create_sequence(number: int):
 def find_summ(digits: list):
     summ = 0
     for i in range(len(digits)):
-        summ = digits[i] + summ
+        summ += digits[i]
     return summ
 
 numb = int(input('Enter your number: '))
