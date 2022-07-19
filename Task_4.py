@@ -9,10 +9,9 @@ def fill_list(value: int):
     return a
 
 def remove_space(row: str):
-    digits = []
-    for i in range(len(row)):
-        if row[i] != ' ':
-            digits.append(int(row[i]))
+    digits = row.split(" ")
+    for i in range(len(digits)):
+        digits[i] = int(digits[i])
     return digits
 
 def mult_items(numbs: list, indexes: list):
